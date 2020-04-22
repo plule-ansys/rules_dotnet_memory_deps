@@ -1,0 +1,28 @@
+diff --git a/tools/nuget2bazel/SdkList.cs b/tools/nuget2bazel/SdkList.cs
+index d6608cb..8e75d0a 100644
+--- a/tools/nuget2bazel/SdkList.cs
++++ b/tools/nuget2bazel/SdkList.cs
+@@ -19,7 +19,6 @@ namespace nuget2bazel
+             "netstandard",
+             "sos.netcore",
+             "system.appcontext",
+-            "system.buffers",
+             "system.collections.concurrent",
+             "system.collections",
+             "system.collections.immutable",
+@@ -89,7 +88,6 @@ namespace nuget2bazel
+             "system.net.websockets.client",
+             "system.net.websockets",
+             "system.numerics",
+-            "system.numerics.vectors",
+             "system.objectmodel",
+             "system.private.datacontractserialization",
+             "system.private.uri",
+@@ -143,7 +141,6 @@ namespace nuget2bazel
+             "system.threading.overlapped",
+             "system.threading.tasks.dataflow",
+             "system.threading.tasks",
+-            "system.threading.tasks.extensions",
+             "system.threading.tasks.parallel",
+             "system.threading.thread",
+             "system.threading.threadpool",

@@ -1,0 +1,20 @@
+load("@io_bazel_rules_dotnet//dotnet:defs.bzl", "net_xunit_test")
+
+net_xunit_test(
+    name = "some_server_test.dll",
+    size = "medium",
+    srcs = [
+        "SomeServerTest.cs",
+    ],
+    dotnet_context_data = "@io_bazel_rules_dotnet//:net_context_data_net462",
+    native_deps = "@net_sdk_net462//:native_deps",
+    testlauncher = "@xunit.runner.console//:net462_net_tool",
+    deps = [
+        "@io_bazel_rules_dotnet//dotnet/stdlib.net/net462:system.runtime.dll",
+        "@xunit.assert//:net462_net",
+        "@xunit.extensibility.core//:net462_net",
+        "@xunit.extensibility.execution//:net462_net",
+        "@grpc.core//:net462_net",
+        "@grpc.healthcheck//:net462_net",
+    ],
+)
